@@ -11,7 +11,6 @@ class trieNode:
     def childrenHave(self, l):
         for child in self.children:
             if child.letter == l:
-                assert( str(child) != child)
                 return True, child
         return False, None
 
